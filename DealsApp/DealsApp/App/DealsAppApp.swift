@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct DealsAppApp: App {
+    @StateObject private var settings = Settings()
     var body: some Scene {
         WindowGroup {
-            HomePageView(viewModel: .init(service: HomePageRequest(requestManager: RequestManager())))
+            HomePageView()
+                .environmentObject(settings)
         }
+        .modelContainer(for: [FavoriteDealEntity.self])
     }
 }
