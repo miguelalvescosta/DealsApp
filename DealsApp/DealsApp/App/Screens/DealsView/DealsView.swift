@@ -20,10 +20,7 @@ struct DealsView: View {
                 LoadFailedView(retry: viewModel.fetchDealsList)
 
             case .loading:
-                ProgressView("Strings.Home.loading")
-                    .progressViewStyle(CircularProgressViewStyle())
-                    .padding()
-
+                LoadingView()
             default:
                 List(viewModel.deals) { deal in
                     DealCardView(
@@ -43,7 +40,7 @@ struct DealsView: View {
                         viewModel: makeDetail(deal.id)
                     )
                 }
-                .navigationTitle("Deals")
+                .navigationTitle("deals_screen_title".localized)
             }
         }
         .task(viewModel.fetchDealsList)

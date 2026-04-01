@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  DealsApp
+
+  Created by Miguel Costa on 31/03/2026.
+  
+*/
+"error_title" = "Load Error";
+"error_subtitle" = "There was an error loading.";
+"retry_title" = "Retry";
+"loading" = "Loading..";
+"deal_detail_screen_title" = "Deal Detail";
+"deals_screen_title" = "Deals";
+"favorites_screen_title" = "Favorites";
+"settings_screen_title" = "Settings";
+"currency_title" = "Currency";

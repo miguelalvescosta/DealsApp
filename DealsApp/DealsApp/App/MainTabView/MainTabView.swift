@@ -18,7 +18,7 @@ struct MainTabView: View {
                 makeDetail: factory.makeDetailViewModel
             )
             .tabItem {
-                Label("Deals", systemImage: "list.dash")
+                Label("deals_screen_title".localized, systemImage: "list.dash")
             }
 
             FavoritesView(
@@ -26,12 +26,12 @@ struct MainTabView: View {
                 makeDetail: factory.makeDetailViewModel
             )
             .tabItem {
-                Label("Favorites", systemImage: "heart")
+                Label("favorites_screen_title".localized, systemImage: "heart")
             }
 
             SettingsView()
                 .tabItem {
-                    Label("Settings", systemImage: "gear")
+                    Label("settings_screen_title".localized, systemImage: "gear")
                 }
         }
     }

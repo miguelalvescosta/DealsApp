@@ -13,8 +13,8 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section(header: Text("Currency")) {
-                    Picker("Currency", selection: $settings.selectedCurrency) {
+                Section(header: Text("currency_title".localized)) {
+                    Picker("currency_title".localized, selection: $settings.selectedCurrency) {
                         ForEach(Settings.Currency.allCases) { currency in
                             Text("\(currency.rawValue) \(currency.code)").tag(currency)
                         }
@@ -22,7 +22,7 @@ struct SettingsView: View {
                     .pickerStyle(.segmented)
                 }
             }
-            .navigationTitle("Settings")
+            .navigationTitle("settings_screen_title".localized)
         }
     }
 }

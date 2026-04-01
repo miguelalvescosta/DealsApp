@@ -33,7 +33,7 @@ struct FavoritesView: View {
                     viewModel: makeDetail(deal.id)
                 )
             }
-            .navigationTitle("Favorites")
+            .navigationTitle("favorites_screen_title".localized)
         }
     }
 }

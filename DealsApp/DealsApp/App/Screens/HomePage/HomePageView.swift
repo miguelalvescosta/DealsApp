@@ -16,7 +16,7 @@ struct HomePageView: View {
                 if let factory {
                     MainTabView(factory: factory)
                 } else {
-                    ProgressView()
+                    LoadingView()
                 }
             }
             .task {

@@ -6,15 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C9F681CA2F7C6CAD005FEEBB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9F681C82F7C6CAD005FEEBB /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C9F6802F2F781F18005FEEBB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9F680192F781F15005FEEBB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9F680202F781F15005FEEBB;
-			remoteInfo = DealsApp;
-		};
-		C9F680392F781F18005FEEBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C9F680192F781F15005FEEBB /* Project object */;
 			proxyType = 1;
@@ -26,7 +23,7 @@
 /* Begin PBXFileReference section */
 		C9F680212F781F15005FEEBB /* DealsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DealsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F6802E2F781F18005FEEBB /* DealsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DealsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9F680382F781F18005FEEBB /* DealsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DealsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9F681C92F7C6CAD005FEEBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -53,11 +50,6 @@
 			path = DealsAppTests;
 			sourceTree = "<group>";
 		};
-		C9F6803B2F781F18005FEEBB /* DealsAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DealsAppUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,22 +67,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9F680352F781F18005FEEBB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		C9F680182F781F15005FEEBB = {
 			isa = PBXGroup;
 			children = (
+				C9F681C82F7C6CAD005FEEBB /* Localizable.strings */,
 				C9F680232F781F15005FEEBB /* DealsApp */,
 				C9F680312F781F18005FEEBB /* DealsAppTests */,
-				C9F6803B2F781F18005FEEBB /* DealsAppUITests */,
 				C9F680222F781F15005FEEBB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +85,6 @@
 			children = (
 				C9F680212F781F15005FEEBB /* DealsApp.app */,
 				C9F6802E2F781F18005FEEBB /* DealsAppTests.xctest */,
-				C9F680382F781F18005FEEBB /* DealsAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,29 +137,6 @@
 			productReference = C9F6802E2F781F18005FEEBB /* DealsAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C9F680372F781F18005FEEBB /* DealsAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C9F680482F781F18005FEEBB /* Build configuration list for PBXNativeTarget "DealsAppUITests" */;
-			buildPhases = (
-				C9F680342F781F18005FEEBB /* Sources */,
-				C9F680352F781F18005FEEBB /* Frameworks */,
-				C9F680362F781F18005FEEBB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C9F6803A2F781F18005FEEBB /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				C9F6803B2F781F18005FEEBB /* DealsAppUITests */,
-			);
-			name = DealsAppUITests;
-			packageProductDependencies = (
-			);
-			productName = DealsAppUITests;
-			productReference = C9F680382F781F18005FEEBB /* DealsAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,10 +151,6 @@
 						CreatedOnToolsVersion = 26.1.1;
 					};
 					C9F6802D2F781F18005FEEBB = {
-						CreatedOnToolsVersion = 26.1.1;
-						TestTargetID = C9F680202F781F15005FEEBB;
-					};
-					C9F680372F781F18005FEEBB = {
 						CreatedOnToolsVersion = 26.1.1;
 						TestTargetID = C9F680202F781F15005FEEBB;
 					};
@@ -215,7 +172,6 @@
 			targets = (
 				C9F680202F781F15005FEEBB /* DealsApp */,
 				C9F6802D2F781F18005FEEBB /* DealsAppTests */,
-				C9F680372F781F18005FEEBB /* DealsAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,17 +181,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F681CA2F7C6CAD005FEEBB /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C9F6802C2F781F18005FEEBB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9F680362F781F18005FEEBB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,13 +209,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9F680342F781F18005FEEBB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -274,12 +217,18 @@
 			target = C9F680202F781F15005FEEBB /* DealsApp */;
 			targetProxy = C9F6802F2F781F18005FEEBB /* PBXContainerItemProxy */;
 		};
-		C9F6803A2F781F18005FEEBB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C9F680202F781F15005FEEBB /* DealsApp */;
-			targetProxy = C9F680392F781F18005FEEBB /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9F681C82F7C6CAD005FEEBB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9F681C92F7C6CAD005FEEBB /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C9F680402F781F18005FEEBB /* Debug */ = {
@@ -517,46 +466,6 @@
 			};
 			name = Release;
 		};
-		C9F680492F781F18005FEEBB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L87QGR52WW;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = testProject.DealsAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DealsApp;
-			};
-			name = Debug;
-		};
-		C9F6804A2F781F18005FEEBB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L87QGR52WW;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = testProject.DealsAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DealsApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,15 +492,6 @@
 			buildConfigurations = (
 				C9F680462F781F18005FEEBB /* Debug */,
 				C9F680472F781F18005FEEBB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C9F680482F781F18005FEEBB /* Build configuration list for PBXNativeTarget "DealsAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9F680492F781F18005FEEBB /* Debug */,
-				C9F6804A2F781F18005FEEBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

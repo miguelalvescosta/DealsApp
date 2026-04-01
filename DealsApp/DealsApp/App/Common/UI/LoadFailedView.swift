@@ -12,12 +12,12 @@ struct LoadFailedView: View {
 
     var body: some View {
         ContentUnavailableView {
-            Text("Load Error")
+            Text("error_title".localized)
                 .font(.headline)
         } description: {
-            Text("There was an error loading the articles.")
+            Text("error_subtitle".localized)
         } actions: {
-            Button("Retry") {
+            Button("retry_title".localized) {
                 Task {
                     await retry()
                 }

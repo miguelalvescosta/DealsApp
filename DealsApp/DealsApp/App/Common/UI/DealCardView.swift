@@ -58,7 +58,7 @@ struct DealCardView: View {
                     .font(.subheadline)
 
                 if let description  {
-                    Text(description)
+                    Text(description.htmlToString)
                         .font(.subheadline)
                 }
 
