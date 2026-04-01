@@ -92,4 +92,3 @@ struct ImageURLBuilder {
         URL(string: "https://images.socialdeal.nl\(path)")
     }
 }
-

@@ -12,10 +12,10 @@ extension Double {
     }
 
     func formattedPrice(currency: Settings.Currency) -> String {
-            let formatter = NumberFormatter()
-            formatter.numberStyle = .currency
-            formatter.currencyCode = currency.code
-            formatter.currencySymbol = currency.rawValue
-            return formatter.string(from: NSNumber(value: self)) ?? "\(self)"
-        }
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.currencyCode = currency.code
+        formatter.currencySymbol = currency.rawValue
+        return formatter.string(from: NSNumber(value: self)) ?? "\(self)"
+    }
 }

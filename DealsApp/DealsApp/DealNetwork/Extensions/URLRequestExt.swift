@@ -20,7 +20,6 @@ extension URLRequest {
         self.init(url: fullURL)
         self.httpMethod = request.method.rawValue
 
-        // Adding headers
         let allHeaders = additionalHeaders.merging(
             request.headers,
             uniquingKeysWith: { (_, new) in new }

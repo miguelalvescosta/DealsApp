@@ -33,31 +33,31 @@ final class FavoritesDealManager: FavoritesDealManagerProtocol {
     }
 
     func toggle(deal: Deal) {
-            if let existing = find(id: deal.id) {
-                context.delete(existing)
-            } else {
-                context.insert(FavoriteDealEntity(
-                    id: deal.id,
-                    title: deal.title,
-                    image: deal.imageURL,
-                    price: deal.price,
-                    originalPrice: deal.originalPrice,
-                    soldLabel: deal.soldLabel,
-                    company: deal.company,
-                    city: deal.city
-                ))
-            }
-            try? context.save()
+        if let existing = find(id: deal.id) {
+            context.delete(existing)
+        } else {
+            context.insert(FavoriteDealEntity(
+                id: deal.id,
+                title: deal.title,
+                image: deal.imageURL,
+                price: deal.price,
+                originalPrice: deal.originalPrice,
+                soldLabel: deal.soldLabel,
+                company: deal.company,
+                city: deal.city
+            ))
         }
-
-        func isFavorite(id: String) -> Bool {
-            find(id: id) != nil
-        }
-
-        private func find(id: String) -> FavoriteDealEntity? {
-            let descriptor = FetchDescriptor<FavoriteDealEntity>(
-                predicate: #Predicate { $0.id == id }
-            )
-            return try? context.fetch(descriptor).first
-        }
+        try? context.save()
     }
+
+    func isFavorite(id: String) -> Bool {
+        find(id: id) != nil
+    }
+
+    private func find(id: String) -> FavoriteDealEntity? {
+        let descriptor = FetchDescriptor<FavoriteDealEntity>(
+            predicate: #Predicate { $0.id == id }
+        )
+        return try? context.fetch(descriptor).first
+    }
+}

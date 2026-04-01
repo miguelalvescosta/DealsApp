@@ -18,7 +18,7 @@ extension String {
         }
         return self
     }
-
+    
     var localized: String {
         NSLocalizedString(self, comment: "")
     }
